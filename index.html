@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Morning</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-normalize@latest/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="">
+    <section class="header">
+      <h1>Log in!</h1>
+      <p>This project is a simple login form with an image toggle feature.</p>
+    </section>
+    <img id="bear" class="bear" src="./img/bear-normal.svg" />
+    <section class="password">
+      <div>
+        <input
+          class="login"
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+        />
+      </div>
+
+      <div>
+        <input
+          class="login"
+          type="password"
+          id="pass"
+          name="password"
+          minlength="8"
+          required
+          placeholder="Password"
+        />
+        <i id="password-visibility" class="fa-regular fa-eye"></i>
+      </div>
+      <input id="signInButton" class="signin" type="submit" value="Sign in" />
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
